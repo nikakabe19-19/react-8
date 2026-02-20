@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Smollbox({ box, text }) {
+function Smollbox({ box, text, dvi }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -11,7 +11,7 @@ function Smollbox({ box, text }) {
         {open ? "▲" : "▼"}
       </div>
 
-      {open && <div>kabe</div>}
+      {open && <div className="dvi_box">{dvi}</div>}
     </div>
   );
 }
